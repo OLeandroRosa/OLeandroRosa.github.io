@@ -1,0 +1,154 @@
+
+@media only screen and (min-width:1300px)
+{
+	header{
+		position: fixed;
+		display: flex;
+		height: 100px;
+		gap: 50px;
+	}
+
+
+	.MenuSup{
+	display: flex;
+	}
+
+	.submenu
+	{
+		display: flex;
+		background-color: #A4A4A4 ;
+	}
+
+	.manuHamburguer{
+		display: none;
+		
+	}
+	.pesquisa{
+
+	    width: 400px;
+
+	}
+
+	#menu-lateral{
+
+		display: none;
+	}
+
+	.vitrine, .vitrine2{
+		justify-content: center;
+
+	}
+
+
+}
+
+@media (max-width:1299px){
+
+	header{
+		height: 100px;
+		display: flex;
+		flex-direction: row;
+		background-color: #141414;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		gap: 30px;
+		box-shadow: 20px 1px 20px 0px;
+		position: fixed;
+		width: 100%;
+		z-index: 8;
+		/* width: 90%;
+		max-width: 1200px; */
+	}
+	
+
+	.pesquisa{
+
+	    width: 200px;
+
+	}
+
+	.MenuSup
+	{
+		visibility: hidden;
+		display: none ;
+	}
+
+	.submenu a
+	{
+		visibility: hidden;
+	}
+
+	.submenu 
+	{
+		display: none ;
+		background-color: #141414;
+	}
+  main{
+	padding-top: 180px ;
+
+  }
+
+	/* #menu-lateral{
+		display: block;
+	} */
+
+	.manuHamburguer{
+		display: block;
+		z-index: 9;
+		cursor: pointer;
+	}
+
+	header#menu-lateral{
+		display: none;
+	}
+
+	header.active#menu-lateral{
+		display: flex;
+	}
+
+	.vitrine, .vitrine2{
+		justify-content: center;
+
+	}
+
+
+
+}
+
+
+@media (max-width:600px) 
+{
+
+	header{
+		height: 60px;
+		display: flex;
+		gap: 10px;
+		justify-content: space-between !important;
+	}
+
+	.logo img{
+		width: 90px;
+	}
+	
+	.MenuSup
+	{
+		display:none;
+	}
+
+	.submenu
+	{
+		display:none;
+	}
+
+	header#menu-lateral{
+		display: none;
+	}
+ 
+    #menu-lateral{
+				
+		right: 0%;
+        top: 130%;
+    }
+
+}

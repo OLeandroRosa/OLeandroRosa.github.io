@@ -1,0 +1,282 @@
+:root{ /*raiz do documento css, podemos declarar variaveis */ 
+    --vermelho: #E50914; /* cores principais do site*/
+    --preta: #141414;
+    
+    }
+    
+    *{ /* reset css , o * chama todos a pagina para fazer a configuração*/
+    
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box; /* mantem o tamanho das "caixas do html" nao pertmi==*/
+        font-family: 'Roboto', sans-serif;
+    }
+    /* elementos base */
+    body{
+
+        background-color: #282829;
+        margin-bottom: 20px;
+    
+    }
+    
+    header{
+    
+    background-color: #141414;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 20px 1px 20px 0px;
+    
+    /* position: fixed; */
+    
+    width: 100%;
+    z-index: 8;
+
+    }
+
+    .logo img{
+        width: 150px;
+    }
+
+    .logo{
+
+        height: 100%;
+        margin-right: 10px ;
+    
+    }
+    
+    .MenuSup{
+      
+        font-size: 18px;
+        height: 100%;
+      
+       
+    }
+    
+    .MenuSup a {
+        font-weight: 200;
+        text-decoration: none;
+        width: 150px;
+        text-transform: uppercase;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    
+        transition: .3s ease all;
+    }
+    .MenuSup a:hover{
+        color:#F6E3CE;
+        transition: none;
+    
+    }
+    
+    .MenuSup a::before{
+        content:'';
+        display: block;
+        width: 1px;
+        height: 20px;
+        background-color: #FFFFFF;
+        position: absolute;
+        left:0;
+    
+    }
+    
+    .MenuSup a:first-of-type:before{
+    display:none;
+    
+    }
+    
+    .submenu{
+    
+        width: 100%;
+        
+        font-size: 16px;
+        height: 80px;
+    
+        z-index: 8;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    
+    .submenu a {
+        font-weight: 400;
+        text-decoration: none;
+        width: 150px;
+        text-transform: uppercase;
+        padding: 10px;
+        border-radius: 10px;
+        color: #141414;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    
+        transition: .3s ease all;
+    }
+    .submenu a:hover{
+        color:#56158C;
+        transition: none;
+    
+    }
+    
+    .submenu a::before{
+        content:'';
+        display: block;
+        width: 1px;
+        height: 20px;
+        background-color: #000000;
+        position: absolute;
+        left:0;
+    
+    }
+    
+    .submenu a:first-of-type:before{
+    display:none;
+    
+    }
+    
+    .pesquisaForm{
+        display: flex;
+        align-items: center;
+        /* gap: 10px; */
+    }
+    
+    .pesquisa{
+        border: 1px solid #FFFFFF;
+        border-right: none;
+        background: transparent;
+        height: 40px;
+    
+        padding: 0px 10px;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 3px 0px 0px 3px;
+    
+    }
+    
+    .pesquisaBtn{
+    
+        width: 40px;
+        height: 40px;
+        border: 1px solid #FFFFFF;
+        background: transparent;
+        color: #FFFFFF;
+        font-weight: 100;
+        font-size: 20px;
+        border-radius: 0px 3px 3px 0px;
+        border-left:none;
+        cursor: pointer;
+    }
+    
+    main{
+        padding-top: 100px; 
+    
+    } 
+    
+    #menu-lateral{
+        
+        background-color: #282829;
+        width: max-content;
+        height: max-content;
+    
+        
+        width: 150px;
+        text-transform: uppercase;
+    
+        border-radius: 10px;
+    
+    
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+
+        top: 150%;
+    }
+    
+    #menu-lateral a{
+    
+        text-decoration: none;
+        color: #FFFFFF;
+    
+    }
+    
+    #menu-lateral a:hover{
+        color:#F6E3CE;
+        transition: none;
+    
+    }
+    
+    .manuHamburguer{
+        border: none;
+        background-color: #282829;
+        color: orangered;
+        /* position: absolute; */
+        /* left: 90%; */
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .vitrine, .vitrine2{
+        width: 95%;
+        max-width: 1300PX;
+        align-content: center;
+        /* justify-content: center; */
+        margin: auto;
+        margin-top: 30px;
+    
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    
+    
+    }
+    
+    .vitrine img, .vitrine2 img{
+    
+        height: 350px;
+    }
+    
+    .wrap-livro{
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+    
+    .btn-livro1{
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    
+        margin-top: 10px;
+        padding: 10px;
+        width: max-content;
+        height:40px;
+        border: none;
+        border-radius: 10px;
+        background-color:orangered;
+        color: rgb(255,255,255);
+        font-size: 15px;
+        cursor: pointer;
+    
+    
+    }
+
+    .menu-mobile{
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+    }

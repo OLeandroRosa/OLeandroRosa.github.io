@@ -1,0 +1,95 @@
+.carrousel_daora, .carrousel_daora_responsive{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.carrousel_daora img, .carrousel_daora_responsive img{
+    display: none;
+    width: 100%;
+    animation-name: hide;
+    animation-duration: .3s;
+
+}
+
+.carrousel_daora img.active,.carrousel_daora_responsive img.active {
+    display: block;
+    animation-name: show;
+
+}
+
+.btn_carrousel{
+position: absolute;
+width: 30px;
+height:40px;
+border: none;
+background-color: rgb(86,21,140);
+color: rgb(255,255,255);
+
+font-size: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+
+.btn_carrousel.next {
+
+right: 30px;
+
+
+}
+
+.btn_carrousel.prev {
+    
+left: 30px;
+
+
+}
+
+@keyframes show {
+    from{
+        opacity: 0;
+    };
+    
+    to{
+        opacity: 1;
+
+    }
+    
+
+}
+
+@keyframes hide {
+    from{
+        opacity: 1;
+    };
+    
+    to{
+        opacity: 0;
+
+    }
+    
+
+}
+
+
+.carrousel_daora_responsive{
+    display: none;
+
+}
+
+@media (max-width: 950px){
+    .carrousel_daora{
+        display: none;
+
+    }
+
+    .carrousel_daora_responsive{
+        display: flex;
+
+    }
+
+}
